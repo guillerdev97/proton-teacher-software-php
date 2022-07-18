@@ -6,7 +6,7 @@
 
     --vt-c-gray-transparent: #666765;
     --vt-c-gray-dark: #585858;
-    --vt-c-gray-dark-transparent: #00000061;
+    --vt-c-gray-dark-transparent: rgba(18, 18, 18, 0.305);
 
     --vt-c-gray-light: #c9c9c9;
     --vt-c-gray-light-transparent: #8c8f80;

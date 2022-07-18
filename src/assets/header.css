@@ -1,7 +1,7 @@
 @import 'src/assets/base.css';
 
 header {
-    background-color: white;
+   /*  background-color: white; */
     color: var(--color-title-header);
 }
 
