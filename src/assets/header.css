@@ -1,0 +1,51 @@
+@import 'src/assets/base.css';
+
+header {
+    background-color: white;
+    color: var(--color-title-header);
+}
+
+
+
+.title {
+    background-color: var(--color-background-header);
+}
+
+.row {
+    align-items: center
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.button {
+    width: 68px;
+    height: 70px;
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.secondContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    background-color: var(--color-background-header-subtitle);
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-title-footer);
+}

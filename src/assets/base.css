@@ -1,0 +1,38 @@
+:root {
+    --vt-c-black: #000000;
+    --vt-c-green: #87c639;
+
+    --vt-c-yellow: #f5d627;
+
+    --vt-c-gray-transparent: #666765;
+    --vt-c-gray-dark: #585858;
+    --vt-c-gray-dark-transparent: #00000061;
+
+    --vt-c-gray-light: #c9c9c9;
+    --vt-c-gray-light-transparent: #8c8f80;
+
+
+
+}
+
+:root {
+    --color-background-primary: var(--vt-c-yellow);
+    --color-background-secondary: var(--vt-c-green);
+
+    --color-background-header: var(--vt-c-black);
+    --color-background-header-subtitle: var(--vt-c-gray-dark-transparent);
+    --color-background-footer: var(--vt-c-black);
+    --color-background-popup: var(--vt-c-gray-transparent);
+
+    --color-title-header: var(--vt-c-yellow);
+    --color-title-footer: var(--vt-c-gray-light);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* font-family: ; */
+    text-rendering: optimizeLegibility;
+    background: linear-gradient(296.17deg, #87C639 0%, #F5D627 99.07%);
+}

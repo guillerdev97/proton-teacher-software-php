@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<html>
+<?php
+require_once("components/layout.php")
+?>
+
 <body>
-   
     <?php
-    foreach($data["studentData"] as $student) {
+    require_once("components/header.php")
+    ?>
+
+    <?php
+    foreach ($data["studentData"] as $student) {
         echo "
+        <div class='container'>
+        <table class='table'>
         <tr>
             <td>{$student->getName()}</td>
             <td>{$student->getClass()}</td>
@@ -18,9 +21,15 @@
                 <a href='?action=delete&id={$student->getId()}'>Eliminar</a>
             </td>
         </tr><br>
+        </table>
+        </div>
         ";
     }
     ?>
 
+    <?php
+    require_once("components/footer.php")
+    ?>
 </body>
+
 </html>
