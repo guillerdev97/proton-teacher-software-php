@@ -52,4 +52,13 @@ class Students {
         return $this->date_time;
     }
    
+    public function findByStudentId($id){
+        $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}");
+        $studentSelected = $query->fetchAll();
+        return new Students($studentSelected[0]["id"], $studentSelected[0]["name"], $studentSelected[0]["class"], $studentSelected[0]["date_time"]);
+    }
+
+    public function delete(){
+        $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
+    }
 }
