@@ -13,7 +13,7 @@
         </div>
         <div class="row subtitle">
             <div class="col">
-                <h2>MY TASK LIST</h2>
+                <h2>NEW DATE</h2>
             </div>
         </div>
     </div>
