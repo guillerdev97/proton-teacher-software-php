@@ -1,0 +1,7 @@
+@import 'src/assets/base.css';
+
+.cardForm{
+  background-color:var(--color-background-card-form);
+  border: 5px var(--vt-c-black) solid;
+  border-radius: 20px;
+}

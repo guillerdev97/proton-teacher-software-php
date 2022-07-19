@@ -9,7 +9,7 @@
     --vt-c-gray-dark-transparent: #00000041;
 
     --vt-c-gray-light: #c9c9c9;
-    --vt-c-gray-light-transparent: #8c8f80;
+    --vt-c-gray-light-transparent: #8c8f80cc;
 
 
 
@@ -23,6 +23,7 @@
     --color-background-header-subtitle: var(--vt-c-gray-dark-transparent);
     --color-background-footer: var(--vt-c-black);
     --color-background-popup: var(--vt-c-gray-transparent);
+    --color-background-card-form: var(--vt-c-gray-light-transparent);
 
     --color-title-header: var(--vt-c-yellow);
     --color-title-footer: var(--vt-c-gray-light);

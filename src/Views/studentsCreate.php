@@ -10,15 +10,30 @@ require_once("components/layout.php")
 
     <main>
         <form action='?action=store' method="post">
-            <label for="name">Student</label>
-            <input id="name" type="text" name="name" required placeholder="Student">
-            <label for="class">Class</label>
-            <textarea id="class" type="text" name="class" required placeholder="Class"></textarea>
-            <input type="submit" value="Create">
-            <input type="reset" value="Reset">
-            <a href="?action=backHome">
-                <button type="button">Cancel</button>
-            </a>
+            <div class="container cardForm">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="col-4"><label for="name">Student</label></div>
+                        <div class="col-6"><input id="name" type="text" name="name" required placeholder="Student"></div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="col-4"><label for="class">Class</label></div>
+                        <div class="col-6"><textarea id="class" type="text" name="class" required placeholder="Class"></textarea></div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <input type="submit" value="Create">
+                <input type="reset" value="Reset">
+                <a href="?action=backHome">
+                    <button type="button">Cancel</button>
+                </a>
+            </div>
         </form>
     </main>
 
