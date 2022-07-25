@@ -30,8 +30,8 @@ require_once("components/layout.php")
                                 <td class='subject'>{$student->getClass()}</td>
                                 <td>{$student->getDateTime()}</td>
                                 <td>
-                                    <a href='?action=delete&id={$student->getId()}'>Eliminar</a>
-                                    <a href='#'>Edit</a>
+                                <a href='?action=edit&id={$student->getId()}'><img src='public/img/iedit.png' alt='edit' width='26' height='26'>​</a>
+                                <a href='?action=delete&id={$student->getId()}'><img src='public/img/idelete.png' alt='delete' width='24' height='25'></a>
                                 </td>
                             </tr>
                         ";
