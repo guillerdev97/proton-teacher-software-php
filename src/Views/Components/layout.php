@@ -11,5 +11,7 @@
     <link rel="stylesheet" href="src/assets/footer.css">
     <link rel="stylesheet" href="src/assets/headerCreate.css">
     <link rel="stylesheet" href="src/assets/cardForm.css">
+    <link rel="stylesheet" href="src/assets/tableStudents.css">
+
 
 </head>
