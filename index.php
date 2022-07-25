@@ -14,6 +14,8 @@
     require("src/index.php");
     ?>
 
+
+<script src="./src/js/index.js" type="text/javascript"></script>
 </body>
 
 </html>
