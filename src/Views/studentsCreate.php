@@ -10,15 +10,43 @@ require_once("components/layout.php")
 
     <main>
         <form action='?action=store' method="post">
-            <label for="name">Student</label>
-            <input id="name" type="text" name="name" required placeholder="Student">
-            <label for="class">Class</label>
-            <textarea id="class" type="text" name="class" required placeholder="Class"></textarea>
-            <input type="submit" value="Create">
-            <input type="reset" value="Reset">
-            <a href="?action=backHome">
-                <button type="button">Cancel</button>
-            </a>
+            <div class="container cardForm">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="col-2 nameLabel"><label for="name">NAME</label></div>
+                            <div class="col-8"><input id="name" type="text" name="name" required placeholder=" Student"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="col-2"><label for="class">CLASS</label></div>
+                            <div class="col-8"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container buttonsStack">
+                <div class="row">
+                    <div class="col-auto">
+                        <input type="submit" value="CREATE">
+                    </div>
+                    <div class="col-auto">
+                        <input type="reset" value="RESET">
+                    </div>
+                    <div class="col-auto">
+                        <a href="?action=backHome">
+                            <button class="buttonCancel" type="button">CANCEL</button>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
         </form>
     </main>
 

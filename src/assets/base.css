@@ -3,13 +3,14 @@
     --vt-c-green: #87c639;
 
     --vt-c-yellow: #f5d627;
+    --vt-c-yellow-dark: #e8d429;
 
     --vt-c-gray-transparent: #666765;
     --vt-c-gray-dark: #585858;
     --vt-c-gray-dark-transparent: #00000041;
 
     --vt-c-gray-light: #c9c9c9;
-    --vt-c-gray-light-transparent: #8c8f80;
+    --vt-c-gray-light-transparent: #8c8f80cc;
 
 
 
@@ -23,9 +24,16 @@
     --color-background-header-subtitle: var(--vt-c-gray-dark-transparent);
     --color-background-footer: var(--vt-c-black);
     --color-background-popup: var(--vt-c-gray-transparent);
+    --color-background-card-form: var(--vt-c-gray-light-transparent);
+
+    --color-text-buttons: var(--vt-c-yellow);
+    --color-background-buttons: var(--vt-c-black);
+
 
     --color-title-header: var(--vt-c-yellow);
     --color-title-footer: var(--vt-c-gray-light);
+
+    --color-border-input: var(--vt-c-yellow)
 }
 
 body {

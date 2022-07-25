@@ -1,0 +1,59 @@
+@import 'src/assets/base.css';
+
+
+main {
+  min-height: 40vw;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardForm {
+  background-color: var(--color-background-card-form);
+  border: 5px var(--vt-c-black) solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 2vw;
+  padding: 2vw;
+}
+
+label {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+input[type=text] {
+  min-width: 400px;
+  min-height: 50px;
+  font-size: 36px;
+  text-align: justify;
+  border-radius: 0.5em;
+  border-color: var(--color-border-input);
+  border-style: double;
+
+}
+
+.row {
+  justify-content: space-around;
+
+}
+
+.buttonsStack {
+  margin: 5vw auto;
+}
+
+input[type=submit],
+input[type=reset],
+.buttonCancel {
+
+  background-color: var(--color-background-buttons);
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-text-buttons);
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  margin: 0px 20px 0px 20px;
+}

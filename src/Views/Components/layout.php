@@ -10,4 +10,6 @@
     <link rel="stylesheet" href="src/assets/header.css">
     <link rel="stylesheet" href="src/assets/footer.css">
     <link rel="stylesheet" href="src/assets/headerCreate.css">
+    <link rel="stylesheet" href="src/assets/cardForm.css">
+
 </head>
