@@ -1,11 +1,12 @@
 @import './base.css';
 
 main {
-  height: 100vw;
   width: 100vw;
+  height: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5vw;
 }
 
 .cardForm {
@@ -15,13 +16,14 @@ main {
   max-height: 400px;
   min-width: 330px;
   min-height: 382px;
-  background-color: var(--color-background-card-form);
-  border: 5px var(--vt-c-black) solid;
-  border-radius: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5vw auto;
+  background-color: var(--color-background-card-form);
+  border: 5px var(--vt-c-black) solid;
+  border-radius: 20px;
+
+
 }
 
 label {
@@ -32,10 +34,10 @@ label {
 input[type=text] {
   width: calc(65vw - 23vw);
   height: calc(8vh - 2vh);
-  max-height: 66px;
   max-width: 850px;
-  min-height: 40px;
+  max-height: 66px;
   min-width: 250px;
+  min-height: 40px;
   font-size: 1.5vw;
   text-align: justify;
   border-radius: 0.5em;
@@ -57,23 +59,32 @@ input[type=submit],
 input[type=reset],
 .buttonCancel {
   width: calc(30vw - 20vw);
-  height: calc(5vh - 1vh);
-  max-height: 30px;
+  height: calc(10vh - 3vh);
   max-width: 185px;
-  min-height: 82px;
-  min-width: 97px;
+  max-height: 80px;
+  min-width: 150px;
+  min-height: 45px;
   background-color: var(--color-background-buttons);
   font-size: 1.5vw;
   font-weight: bold;
   color: var(--color-text-buttons);
   text-align: center;
   border-radius: 10px;
-  margin: 0px 30px 0px 30px;
+  margin: 0px 25px 0px 25px;
 }
 
 /* vh883 */
 
 @media (max-width: 700px) {
+  body {
+    background: linear-gradient(339.32deg, #4A4D15 5.73%, #aac639 93.99%);
+  }
+
+
+  main {
+    height: 90vw;
+  }
+
   .cardForm {
     width: calc(100vw - 30vw);
     height: calc(5vh - 5vh);
@@ -107,14 +118,14 @@ input[type=reset],
   input[type=submit],
   input[type=reset],
   .buttonCancel {
-    width: 60px;
-    height: 70px;
+    width: calc(30vw - 20vw);
+    height: calc(5vh - 1vh);
     background-color: var(--color-background-buttons);
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: bold;
     color: var(--color-text-buttons);
     text-align: center;
-    border-radius: 20px;
-    margin: 0px 5px 0px 5px;
+    border-radius: 30px;
+    margin: 0px 2px 0px 2px;
   }
 }
