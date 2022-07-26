@@ -74,4 +74,17 @@ class Students
     {
         $query = $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `class`) VALUES ('$this->name','$this->class');");
     }
+
+    public function rename($name,$class)
+    {
+        $this->name = $name;
+        $this->class = $class;
+        
+    }
+
+    public function update()
+    {
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `name` =  '{$this->name}', `class` =  '{$this->class}' WHERE `id` = {$this->id}");
+    }
+
 }

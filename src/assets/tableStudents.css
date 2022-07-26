@@ -1,16 +1,18 @@
-@import 'src/assets/base.css';
+@import './base.css';
 
 
 .edit,
-.delte {
+.delete {
     margin: 0px 20px 0px 20px;
 }
 
-.edit:hover {
+/* .edit:hover {
     background: url('public/img/svgColoredEdit.svg');
     height: 30px;
     width: 30px;
-}
+} */
+
+
 
 
 
