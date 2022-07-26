@@ -10,7 +10,7 @@ require_once("components/layout.php")
     require_once("components/header.php")
     ?>
     
-    <main>
+    <main class="contentMain">
 
         <div class="scrollStyle" id="scrollYBox" class="table-responsive">
             <table id="scrollYTable" class="table table-bordered table-striped m-0">
@@ -76,7 +76,11 @@ require_once("components/layout.php")
                 </tbody>
             </table>
         </div>
-
+        <div>
+            <a href="?action=create">
+                <img class="buttonQuerie" src="public/img/CreateIcon.png" alt="">
+            </a>
+        </div>  
     </main>
     <?php
     require_once("components/footer.php")
@@ -88,21 +92,37 @@ require_once("components/layout.php")
 
 </html>
 
+
+
+
+
 <style scoped>
 
+/* home page styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+header {
+    margin-bottom: 50px;
+}
+footer {
+    margin-top: 50px;
+}
+.contentMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonQuerie {
+    display: none;
+}
 #scrollYBox {
     display: block;
     position: relative;
     width: 80%;
-    height: 400px;
-    margin: 25px auto;
-    margin-bottom: 25px;
+    height: 450px;
     overflow: auto;
     border-radius: 10px;
 
@@ -115,73 +135,147 @@ require_once("components/layout.php")
     background-color: white;
     background-repeat: no-repeat;
     background-size: 10px 100%;
-    margin-bottom: 15px;
 }
-
-
 #scrollYTable {
     text-align: center;
 }
-
 #scrollYTable thead {
     height: 50px;
 }
-
 #scrollYTable thead tr th {
     position: sticky;
     top: 0;
 }
 
-
-  
+/* media queries */
+/* 1300px */
 @media (max-width: 1300px) {
     h1 {
         font-size: 5.3rem;
     }
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .button {
+        width: 65px;
+        height: 65px;
+    }
+    #scrollYBox {
+        height: 500px;
+    }
 }
+/* 1200px */
 @media (max-width: 1200px) {
     h1 {
         font-size: 4.5rem;
     }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .button {
+        width: 55px;
+        height: 55px;
+    }
+    #scrollYBox {
+        height: 500px;
+    }
 }
+/* 1100px */
 @media (max-width: 1100px) {
     h1 {
         font-size: 4rem;
     }
+     #scrollYBox {
+        height: 520px;
+    }
 }
+/* 900px */
 @media (max-width: 900px) {
     h1 {
         font-size: 3.5rem;
     }
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+    #scrollYBox {
+        height: 540px;
+       
+    }
 }
+/* 775px */
 @media (max-width: 775px) {
     h1 {
         font-size: 3.1rem;
     }
-}
-
-@media (max-width: 700px) {
-
+    h2 {
+        font-size: 22px;
+    }
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+    .button {
+        width: 40px;
+        height: 40px;
+    }
     #scrollYBox {
-        width: 70%;
-        height: 400px;
-        overflow: auto;
+        height: 560px;
+    }
 
+}
+/* 700px */
+@media (max-width: 700px) {
+    .contentMain {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentMain > div {
+        width: 85%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 15px;
+
+      /*   border: 1px solid black; */
+    }
+    .buttonQuerie {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        font-size: 2.6rem;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    #scrollYBox {
+        width:75%;
+        height: 570px;
+        overflow: auto;
         background-color: transparent;
         border: 5px solid transparent;
         border-radius: 5px;
     }
-    
     thead {
         display: none;
     }
-    
     tbody {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     
     }
-    
     tr {
         display: inline-block;
         padding: 1rem 0.5rem 1rem 0.5rem;
@@ -192,19 +286,14 @@ require_once("components/layout.php")
         border: none;
         background-color: white;
     }
-
     th {
         display: block;
         border: none;
-
     }
-
     td {
         display: block;
         border: none;
-
     }
-
     .headerCard {
         height: 70px;
         border-radius: 10px;
@@ -212,24 +301,55 @@ require_once("components/layout.php")
     .button {
         display: none;
     }
-    .img {
-        display: block;
+}
+/* 590px */
+@media (max-width: 590px) {
+    h1 {
+        font-size: 2.1rem;
     }
-    .imgRow {
-
-        position: fixed;
-        top: 550px;
-        left: 370px;
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    #scrollYBox {
+        width: 85%;
+    }
+    footer {
+        height: 50px;
+    }
+    footer > h3 {
+        font-size: 13px;
+    }
+}
+/* 530px */
+@media (max-width: 530px) {
+    #scrollYBox {
+        width:95%;
+    }
+}
+/* 485px */
+@media (max-width: 485px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+    #scrollYBox {
+        width: 100%;
+    }
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0.5rem 1rem 0.5rem;
-        margin: 1.5rem;
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
+        height: 70px;
     }
-    
-
+    footer h3 {
+        font-size: 16px;
+    }
 }
+
+
+
 </style>
