@@ -5,6 +5,8 @@
             <div class="col-8">
                 <h1>PROTON TEACHER</h1>
             </div>
+            <div class="col-2 secondContainer">
+            </div>
         </div>
         <div class="row subtitle">
             <div class="col">

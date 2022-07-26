@@ -11,21 +11,17 @@ require_once("components/layout.php")
     <main>
         <form action='?action=store' method="post">
             <div class="container cardForm">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="row">
-                            <div class="col-2 nameLabel"><label for="name">NAME</label></div>
-                            <div class="col-8"><input id="name" type="text" name="name" required placeholder=" Student"></div>
-                        </div>
+                <div class="row rowResponsive">
+                    <div class="row formResponsive">
+                        <div class="col-2 labelResponsive"><label for="name">NAME</label></div>
+                        <div class="col-8"><input id="name" type="text" name="name" required placeholder=" Student"></div>
                     </div>
                 </div>
+                <div class="row rowResponsive">
+                    <div class="row formResponsive">
+                        <div class="col-2 labelResponsive"><label for="class">CLASS</label></div>
+                        <div class="col-8"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
 
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="row">
-                            <div class="col-2"><label for="class">CLASS</label></div>
-                            <div class="col-8"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
-                        </div>
                     </div>
                 </div>
             </div>

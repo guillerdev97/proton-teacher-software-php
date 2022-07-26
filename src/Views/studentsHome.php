@@ -63,10 +63,7 @@ require_once("components/layout.php")
                                         </div>
                                         </div>
                                     </div>
-                                    </div> 
-                                    
-                                    
-                                    
+                                    </div>         
                                     <a href='?action=delete&id={$student->getId()}'><img class='delete' src='public/img/iconDelete.svg' alt='delete'></a>
                                 </td>
                             </tr>
@@ -131,8 +128,6 @@ require_once("components/layout.php")
     position: sticky;
     top: 0;
 }
-
-
   
 @media (max-width: 1300px) {
     h1 {
