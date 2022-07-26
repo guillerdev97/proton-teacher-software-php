@@ -1,4 +1,4 @@
-@import 'src/assets/base.css';
+@import './base.css';
 
 header {
     /*  background-color: white; */
@@ -49,3 +49,4 @@ h2 {
     text-align: center;
     color: var(--color-title-footer);
 }
+

@@ -25,6 +25,15 @@ class StudentsController
             $this->store($_POST);
             return;
         }
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit")) {
+            $this->edit($_GET["id"]);
+            return;
+        }
+
+        if (isset($_GET["action"]) && ($_GET["action"] == "update")) {
+            $this->update($_POST, $_GET["id"]);
+            return;
+        }
         if (isset($_GET["action"]) && ($_GET["action"] == "backHome")) {
 
             $this->backHome();
@@ -64,6 +73,23 @@ class StudentsController
 
     public function backHome()
     {
+        $this->index();
+    }
+
+    public function edit($id)
+    {
+        $studentHelped = new Students();
+        $student = $studentHelped->findByStudentId($id);
+        return $student;
+    }
+
+    public function update(array $request, $id)
+    {
+        $studentHelped = new Students();
+        $student = $studentHelped->findByStudentId($id);
+        $student->rename($request["name"],$request["class"]);
+        $student->update();
+        
         $this->index();
     }
 }

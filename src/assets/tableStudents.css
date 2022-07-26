@@ -1,0 +1,29 @@
+@import './base.css';
+
+
+.edit,
+.delete {
+    margin: 0px 20px 0px 20px;
+}
+
+/* .edit:hover {
+    background: url('public/img/svgColoredEdit.svg');
+    height: 30px;
+    width: 30px;
+} */
+
+
+
+
+
+.scrollStyle::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollStyle::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+    background-color: var(--vt-c-gray-light);
+}
