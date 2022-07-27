@@ -11,7 +11,6 @@ require_once("components/layout.php")
     ?>
     
     <main class="contentMain">
-
         <div class="scrollStyle" id="scrollYBox" class="table-responsive">
             <table id="scrollYTable" class="table table-bordered table-striped m-0">
                 <thead class="table-dark text-light">
@@ -33,18 +32,19 @@ require_once("components/layout.php")
                                 <td class='subject'>{$student->getClass()}</td>
                                 <td>{$student->getDateTime()}</td>
                                 <td>
-                                    <a href='?action=edit&id={$student->getId()}' data-bs-toggle='modal' data-bs-target='#modal'><img class='edit' src='public/img/iconEdit.svg' alt='edit'>​</a>
-                                        <div class='modal fade' id='modal' tabindex='-1' aria-labelledby='exampleModalLabel'
+                                    <a href='?action=edit&id={$student->getId()}' data-bs-toggle='modal' data-bs-target='#modal{$student->getId()}'><img class='edit' src='public/img/iconEdit.svg' alt='edit'>​</a>
+                                        <div class='modal fade' id='modal{$student->getId()}' tabindex='-1' aria-labelledby='exampleModalLabel'
                                         aria-hidden='true'>
                                             <div class='modal-dialog'>
                                                 <div class='modal-content'>
-                                                    <div class='modal-header'>
+                                                    <div  class='modal-header'>
                                                         <h5 class='modal-title' id='exampleModalLabel'>EDIT</h5>
+                                                        <img src='public/img/CreateIcon.png' alt=''>
                                                         <button type='button' class='btn-close' data-bs-dismiss='modal'
                                                             aria-label='Close'></button>
                                                     </div>
                                             <div class='modal-body'>
-                                            <form class='justify-content-center' action='?action=update&id={$student->getId()}' method='post'>
+                                            <form class='justify-content-center' action='?action=update&id={$student->getId()}' method='POST'>
                                             <div class='input-group' style=' margin-bottom: 2rem; width: 90%; margin-left: 5%;'>
                                                 <span class='input-group-text'>Name</span>
                                             
@@ -54,19 +54,15 @@ require_once("components/layout.php")
                                                 <span class='input-group-text'>Class</span>
                                                 <input class='form-control' area-label='With textarea' type='text' name='class' required value='{$student->getClass()}'>
                                             </div>
-                                            <div class='botones' style='margin-bottom: 2rem;'>
-                                                <input class='btn-lg btn-outline-success go-add-task float'type='submit' value='Edit'>
-                                                <input class='btn-lg btn-outline-warning go-add-task float'type='reset' value='Reset'>
+                                            <div  class='botones' style='margin-bottom: 1rem; margin-top: 1rem'>
+                                                <input style='font-size: 16px;' class='btn-lg btn-outline-success go-add-task float'type='submit' value='Edit'>
+                                                <input style='font-size: 16px;'  class='btn-lg btn-outline-warning go-add-task float'type='reset' value='Reset'>
                                             </div>
-                                            
                                         </form>
                                         </div>
                                         </div>
                                     </div>
                                     </div> 
-                                    
-                                    
-                                    
                                     <a href='?action=delete&id={$student->getId()}'><img class='delete' src='public/img/iconDelete.svg' alt='delete'></a>
                                 </td>
                             </tr>
@@ -82,12 +78,12 @@ require_once("components/layout.php")
             </a>
         </div>  
     </main>
+
     <?php
     require_once("components/footer.php")
     ?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
 </body>
 
 </html>
@@ -145,6 +141,22 @@ footer {
 #scrollYTable thead tr th {
     position: sticky;
     top: 0;
+}
+.modal-header {
+    background-color: gray;
+}
+.modal-header > img {
+    width: 50px;
+    height: 50px;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-lg {
+    width: 80px;
+    height: 60px;
 }
 
 /* media queries */
