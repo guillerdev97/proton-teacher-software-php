@@ -5,20 +5,23 @@ namespace App;
 use PDO;
 use PDOException;
 
-class Database {
+class Database
+{
 
     public $mysql;
 
-    public function __construct() {
+    public function __construct()
+    {
         try {
             $this->mysql = $this->getConnection();
-          /*   echo "Connection is available"; */
-        } catch(PDOException $ex) {
+            /*   echo "Connection is available"; */
+        } catch (PDOException $ex) {
             echo "Connection has failed: " . $ex->getMessage();
         }
     }
 
-    public function getConnection() {
+    public function getConnection()
+    {
         $host = "localhost";
         $user = "root";
         $password = "";
