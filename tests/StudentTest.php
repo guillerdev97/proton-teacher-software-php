@@ -1,12 +1,12 @@
-<?php
-
-namespace Tests;
-
-use PHPUnit\Framework\TestCase;
-use App\Models\Students;
 
 
-class StudentTest extends TestCase
+/* namespace Tests; */
+
+/* use PHPUnit\Framework\TestCase;
+use App\Models\Students; */
+
+
+/* class StudentTest extends TestCase
 {
 
 	public function testIfGetNameAndGetClassWorkCorrectly()
@@ -17,5 +17,5 @@ class StudentTest extends TestCase
 
 		$this->assertEquals("StudentTest", $resultStudentName);
 		$this->assertEquals("Comment for Test", $resultStudentClass);
-	}
-}
+	} */
+/* } */
