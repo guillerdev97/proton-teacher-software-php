@@ -37,26 +37,34 @@ require_once("components/layoutHome.php")
                                         aria-hidden='true'>
                                             <div class='modal-dialog'>
                                                 <div class='modal-content'>
-                                                    <div  class='modal-header'>
+                                                    <div class='modal-header'>
                                                         <h5 class='modal-title' id='exampleModalLabel'>EDIT</h5>
-                                                        <img src='public/img/CreateIcon.png' alt=''>
-                                                        <button type='button' class='btn-close' data-bs-dismiss='modal'
-                                                            aria-label='Close'></button>
+                                                        <img src='public/img/editPopup.svg' alt=''>
+                                                        
                                                     </div>
                                             <div class='modal-body'>
-                                            <form class='justify-content-center' action='?action=update&id={$student->getId()}' method='POST'>
-                                            <div class='input-group' style=' margin-bottom: 2rem; width: 90%; margin-left: 5%;'>
-                                                <span class='input-group-text'>Name</span>
-                                            
-                                                <input class='form-control' type='text' name='name' required value='{$student->getName()}' >
+
+                                            <form action='?action=update&id={$student->getId()}' method='POST'>
+                                            <div class='form-group'>
+                                                <div class='input-group' style=' margin-bottom: 2rem; width: 50%; margin-left: 5%;'>
+                                                    <div>
+                                                        <span class='input-group-text nameForm'>NAME</span>
+                                                        <input class='form-control formLabel' type='text' name='name' required value='{$student->getName()}' >
+                                                    </div>
+                                                    <div>
+                                                        <span class='input-group-text nameForm'>CLASS</span>
+                                                        <input class='form-control formLabel' type='text' name='class' required value='{$student->getClass()}'>
+                                                    </div>
+                                                </div>
+                                                <div class='iconProton'>
+                                                    <img src='public/img/protonPopup.svg' alt=''>
+                                                </div>
                                             </div>
-                                            <div class='input-group' style='width: 90%; margin-left: 5%;'>
-                                                <span class='input-group-text'>Class</span>
-                                                <input class='form-control' area-label='With textarea' type='text' name='class' required value='{$student->getClass()}'>
-                                            </div>
-                                            <div  class='botones' style='margin-bottom: 1rem; margin-top: 1rem'>
-                                                <input style='font-size: 16px;' class='btn-lg btn-outline-success go-add-task float'type='submit' value='Edit'>
-                                                <input style='font-size: 16px;'  class='btn-lg btn-outline-warning go-add-task float'type='reset' value='Reset'>
+                                            <div  class='botones'>
+                                                <input style='font-size: 16px;' class='btn-lg btn-outline-success go-add-task float buttonsofEdit'type='submit' value='SUBMIT'>
+                                                <a href='./index.php'> 
+                                                    <input style='font-size: 16px;'  class='btn-lg btn-outline-warning go-add-task float buttonsofEdit' type='button' value='CANCEL'>
+                                                </a>
                                             </div>
                                         </form>
                                         </div>
@@ -77,95 +85,155 @@ require_once("components/layoutHome.php")
             <a href="?action=create">
                 <img class="buttonQuerie" src="public/img/CreateIcon.png" alt="">
             </a>
-        </div>
+        </div>  
     </main>
 
     <?php
     require_once("components/footer.php")
     ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
 </body>
 
 </html>
 
+
+
+
+
 <style scoped>
-    /* home page styles */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
 
-    header {
-        margin-bottom: 50px;
-    }
+/* home page styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.buttonsofEdit{
+    background-color: black;
+    color: #f5d627;
+    border-radius: 10px;
+}
 
-    footer {
-        margin-top: 50px;
-    }
+header {
+    margin-bottom: 50px;
+}
+footer {
+    margin-top: 50px;
+}
+.contentMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonQuerie {
+    display: none;
+}
+#scrollYBox {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 450px;
+    overflow: auto;
+    border-radius: 10px;
 
-    .contentMain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    scrollbar-width: 12px;
+    scrollbar-color: transparent;
 
-    .buttonQuerie {
-        display: none;
-    }
+    background:
+        radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+        radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 10px 100%;
+}
+#scrollYTable {
+    text-align: center;
+}
+#scrollYTable thead {
+    height: 50px;
+}
+#scrollYTable thead tr th {
+    position: sticky;
+    top: 0;
+}
+.modal-content{
+    position: relative;
+    top: 50px;
+}
 
-    #scrollYBox {
-        display: block;
-        position: relative;
-        width: 80%;
-        height: 450px;
-        overflow: auto;
-        border-radius: 10px;
+.modal-header {
+    background-color: black;
+    color: #f5d627;
+    width: 752px;
+    position: relative;
+    right: 100px;
 
-        scrollbar-width: 12px;
-        scrollbar-color: transparent;
+}
+.modal-header > img {
+    width: 50px;
+    height: 50px;
+}
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25%;
+    margin: -15px;
 
-        background:
-            radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
-            radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: 10px 100%;
-    }
+}
+.btn-lg {
+    width: 80px;
+    height: 60px;
+}
+.iconProton{
+    height: 227px;
+    width: 250px;
+    align-self: center;
+    position: relative;
+    left: 60px;
+}
+h5{
+    font-size:40px;
+}
+.modal-body{
+    background-color: #585858;
+    width: 752px;
+    height: 478px;
+    position: relative;
+    right: 100px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
 
-    #scrollYTable {
-        text-align: center;
-    }
+.form-group{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.formLabel{
+    width: 114%;
+    height: 40px;
+    margin: 30px;
 
-    #scrollYTable thead {
-        height: 50px;
-    }
-
-    #scrollYTable thead tr th {
-        position: sticky;
-        top: 0;
-    }
-
-    .modal-header {
-        background-color: gray;
-    }
-
-    .modal-header>img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .botones {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn-lg {
-        width: 80px;
-        height: 60px;
-    }
+}
+.nameForm{
+    width: 80px;
+    margin: 30px;
+    font-size: larger;
+    font-weight: 800;
+    background: transparent;
+    border: none;
+    position: relative;
+    left: 120px;
+    color: black;
+}
 
     /* media queries */
     /* 1300px */
