@@ -1,6 +1,6 @@
 <html>
 <?php
-require_once("components/layout.php")
+require_once("components/layoutCreate.php")
 ?>
 
 <body>
@@ -55,6 +55,7 @@ require_once("components/layout.php")
 </html>
 
 <style scoped>
+  
     body {
         background: linear-gradient(296.17deg, #F5D627 0%, #87C639 99.07%);
     }

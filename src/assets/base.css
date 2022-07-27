@@ -35,7 +35,12 @@
 
     --color-border-input: var(--vt-c-yellow)
 }
-
+/* box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     position: relative;
     height: 100vh;

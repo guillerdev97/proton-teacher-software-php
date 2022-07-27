@@ -1,7 +1,7 @@
 <html>
 
 <?php
-require_once("components/layout.php")
+require_once("components/layoutHome.php")
 ?>
 
 <body>

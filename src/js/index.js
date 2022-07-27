@@ -52,11 +52,10 @@ function initialImgDelete(){
 
 
 const subjectColors = {
-    red: ["English", "Biology", "Sports"],
-    green: ["Nature"],
-    yellow: ["Software", "Development"],
-    blue: ["Language"],
-    orange: ["maths"]
+    red: ["Software", "Development", "Programming"],
+    green: ["Nature", "Biology", "Sports"],
+    blue: ["Language", "English", "French", "German"],
+    yellow: ["Maths", "Physical"]
 }
 
 for(const color in subjectColors) {

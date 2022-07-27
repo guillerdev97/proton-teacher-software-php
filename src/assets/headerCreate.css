@@ -2,6 +2,7 @@
 
 header {
     color: var(--color-title-header);
+    margin-bottom: 40px;
 }
 
 .title {
