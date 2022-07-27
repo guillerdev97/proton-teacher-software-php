@@ -1,34 +1,44 @@
 @import './base.css';
 
-
 main {
-  min-height: 40vw;
-  min-width: 100vw;
+  width: 100vw;
+  height: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5vw;
 }
 
 .cardForm {
+  width: calc(95vw - 32vw);
+  height: calc(5vh - 5vh);
+  max-width: 1440px;
+  max-height: 400px;
+  min-width: 330px;
+  min-height: 382px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: var(--color-background-card-form);
   border: 5px var(--vt-c-black) solid;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 2vw;
-  padding: 2vw;
+
+
 }
 
 label {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 2.3vw;
+  font-weight: 800;
 }
 
 input[type=text] {
-  min-width: 400px;
-  min-height: 50px;
-  font-size: 36px;
+  width: calc(65vw - 23vw);
+  height: calc(8vh - 2vh);
+  max-width: 850px;
+  max-height: 66px;
+  min-width: 250px;
+  min-height: 40px;
+  font-size: 1.5vw;
   text-align: justify;
   border-radius: 0.5em;
   border-color: var(--color-border-input);
@@ -48,12 +58,74 @@ input[type=text] {
 input[type=submit],
 input[type=reset],
 .buttonCancel {
-
+  width: calc(30vw - 20vw);
+  height: calc(10vh - 3vh);
+  max-width: 185px;
+  max-height: 80px;
+  min-width: 150px;
+  min-height: 45px;
   background-color: var(--color-background-buttons);
-  font-size: 30px;
+  font-size: 1.5vw;
   font-weight: bold;
   color: var(--color-text-buttons);
+  text-align: center;
   border-radius: 10px;
-  padding: 10px 40px 10px 40px;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 25px 0px 25px;
+}
+
+/* vh883 */
+
+@media (max-width: 700px) {
+  body {
+    background: linear-gradient(339.32deg, #4A4D15 5.73%, #aac639 93.99%);
+  }
+
+
+  main {
+    height: 90vw;
+  }
+
+  .cardForm {
+    width: calc(100vw - 30vw);
+    height: calc(5vh - 5vh);
+    min-width: 330px;
+    min-height: 382px;
+  }
+
+  .rowResponsive {
+    width: 450px;
+  }
+
+  .formResponsive {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+
+  }
+
+  label {
+    font-size: 4vw;
+  }
+
+  input[type=text] {
+    border-radius: 1rem;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  input[type=submit],
+  input[type=reset],
+  .buttonCancel {
+    width: calc(30vw - 20vw);
+    height: calc(5vh - 1vh);
+    background-color: var(--color-background-buttons);
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: var(--color-text-buttons);
+    text-align: center;
+    border-radius: 30px;
+    margin: 0px 2px 0px 2px;
+  }
 }
