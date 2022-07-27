@@ -69,6 +69,8 @@ class StudentsController
         $newStudent = new Students(null, $request["name"], $request["class"]);
         $newStudent->save();
         $this->index();
+        $var = "Congrats! You have created a new class!";
+        echo "<script>alert('".$var."');</script>";
     }
 
     public function backHome()

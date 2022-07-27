@@ -27,7 +27,9 @@ require_once("components/layoutHome.php")
                     foreach ($data["studentData"] as $student) {
                         echo "
                             <tr>
-                                <td class='color headerCard'></td>
+                                <td class='color headerCard'>
+                                    <img class='logoCard' src='public/img//ProtonProfe.png'</img>
+                                </td>
                                 <td>{$student->getName()}</td>
                                 <td class='subject'>{$student->getClass()}</td>
                                 <td>{$student->getDateTime()}</td>
@@ -100,7 +102,15 @@ require_once("components/layoutHome.php")
     header {
         margin-bottom: 50px;
     }
-
+    .headerCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoCard {
+        width: 35px;
+        height: 35px;
+    }
     footer {
         margin-top: 50px;
     }
@@ -348,7 +358,10 @@ require_once("components/layoutHome.php")
             height: 70px;
             border-radius: 10px;
         }
-
+        .logoCard {
+            width: 40px;
+            height: 40px;
+        }
         .button {
             display: none;
         }
