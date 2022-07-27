@@ -25,7 +25,7 @@ class StudentsController
             $this->store($_POST);
             return;
         }
-      /*   if (isset($_GET["action"]) && ($_GET["action"] == "edit")) {
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit")) {
             $this->edit($_GET["id"]);
             return;
         }
@@ -33,7 +33,7 @@ class StudentsController
         if (isset($_GET["action"]) && ($_GET["action"] == "update")) {
             $this->update($_POST, $_GET["id"]);
             return;
-        } */
+        }
         if (isset($_GET["action"]) && ($_GET["action"] == "backHome")) {
 
             $this->backHome();
