@@ -1,8 +1,6 @@
 @import './base.css';
 
 main {
-  width: 100vw;
-  height: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,14 +74,6 @@ input[type=reset],
 /* vh883 */
 
 @media (max-width: 700px) {
-  body {
-    background: linear-gradient(339.32deg, #4A4D15 5.73%, #aac639 93.99%);
-  }
-
-
-  main {
-    height: 90vw;
-  }
 
   .cardForm {
     width: calc(100vw - 30vw);
