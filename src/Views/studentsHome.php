@@ -27,7 +27,9 @@ require_once("components/layoutHome.php")
                     foreach ($data["studentData"] as $student) {
                         echo "
                             <tr>
-                                <td class='color headerCard'></td>
+                                <td class='color headerCard'>
+                                    <img class='logoCard' src='public/img//ProtonProfe.png'</img>
+                                </td>
                                 <td>{$student->getName()}</td>
                                 <td class='subject'>{$student->getClass()}</td>
                                 <td>{$student->getDateTime()}</td>
@@ -167,6 +169,7 @@ footer {
     h1 {
         font-size: 5.3rem;
     }
+
     .logo {
         width: 120px;
         height: 120px;
@@ -241,6 +244,7 @@ footer {
     }
     #scrollYBox {
         height: 560px;
+
     }
 
 }
@@ -346,9 +350,98 @@ footer {
     h1 {
         font-size: 1.7rem;
     }
+
     .logo {
         width: 65px;
         height: 65px;
+
+
+    /* 700px */
+    @media (max-width: 700px) {
+        .contentMain {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contentMain>div {
+            width: 85%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 15px;
+
+            /*   border: 1px solid black; */
+        }
+
+        .buttonQuerie {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        #scrollYBox {
+            width: 75%;
+            height: 570px;
+            overflow: auto;
+            background-color: transparent;
+            border: 5px solid transparent;
+            border-radius: 5px;
+        }
+
+        thead {
+            display: none;
+        }
+
+        tbody {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        tr {
+            display: inline-block;
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            margin: 1.5rem;
+            border: 1px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            border: none;
+            background-color: white;
+        }
+
+        th {
+            display: block;
+            border: none;
+        }
+
+        td {
+            display: block;
+            border: none;
+        }
+
+        .headerCard {
+            height: 70px;
+            border-radius: 10px;
+        }
+        .logoCard {
+            width: 40px;
+            height: 40px;
+        }
+        .button {
+            display: none;
+        }
     }
     #scrollYBox {
         width: 100%;
