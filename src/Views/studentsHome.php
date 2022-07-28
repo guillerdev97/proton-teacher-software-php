@@ -28,7 +28,7 @@ require_once("components/layoutHome.php")
                         echo "
                             <tr>
                                 <td class='color headerCard'>
-                                    <img class='logoCard' src='public/img//ProtonProfe.png'</img>
+                                    <img class='logoCard' src='public/img//ProtonNerd.png'</img>
                                 </td>
                                 <td>{$student->getName()}</td>
                                 <td class='subject'>{$student->getClass()}</td>
