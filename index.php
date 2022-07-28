@@ -15,7 +15,7 @@
     ?>
 
 
-<script src="./src/js/index.js" type="text/javascript"></script>
+    <script src="./src/js/index.js" type="text/javascript"></script>
 </body>
 
 </html>

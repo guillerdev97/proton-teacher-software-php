@@ -98,18 +98,7 @@ require_once("components/layoutHome.php")
 
 </html>
 
-
-
-
-
 <style scoped>
-    /* home page styles */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
     .buttonsofEdit {
         background-color: black;
         color: #f5d627;
@@ -129,10 +118,6 @@ require_once("components/layoutHome.php")
     .logoCard {
         width: 35px;
         height: 35px;
-    }
-
-    footer {
-        margin-top: 50px;
     }
 
     .contentMain {
@@ -162,6 +147,7 @@ require_once("components/layoutHome.php")
         background-color: white;
         background-repeat: no-repeat;
         background-size: 10px 100%;
+        +
     }
 
     #scrollYTable {
@@ -401,6 +387,7 @@ require_once("components/layoutHome.php")
             width: 80px;
             height: 80px;
         }
+
 
         #scrollYBox {
             width: 75%;

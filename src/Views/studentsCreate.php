@@ -14,13 +14,13 @@ require_once("components/layoutCreate.php")
                 <div class="row rowResponsive">
                     <div class="row formResponsive">
                         <div class="col-auto labelResponsive"><label for="name">NAME</label></div>
-                        <div class="col-auto"><input id="name" type="text" name="name" required placeholder=" Student"></div>
+                        <div class="col-auto"><input id="name" type="text" name="name"></div>
                     </div>
                 </div>
                 <div class="row rowResponsive">
                     <div class="row formResponsive">
                         <div class="col-auto labelResponsive"><label for="class">CLASS</label></div>
-                        <div class="col-auto"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
+                        <div class="col-auto"><input id="class" type="text" name="class"></input></div>
 
                     </div>
                 </div>
@@ -44,18 +44,13 @@ require_once("components/layoutCreate.php")
                 </div>
             </div>
         </form>
+
+        <?php
+        require_once("components/footer.php")
+        ?>
     </main>
 
 
-    <?php
-    require_once("components/footer.php")
-    ?>
 </body>
 
 </html>
-
-<style scoped>
-    body {
-        background: linear-gradient(296.17deg, #F5D627 0%, #87C639 99.07%);
-    }
-</style>

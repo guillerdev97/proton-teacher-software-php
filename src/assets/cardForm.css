@@ -46,8 +46,8 @@ input[type=text] {
   border-radius: 0.5em;
   border-color: var(--color-border-input);
   border-style: double;
+  padding: 0px 10px 0px 10px;
   margin: auto;
-
 }
 
 .row {
@@ -77,13 +77,11 @@ input[type=reset],
   margin: 0px 25px 0px 25px;
 }
 
-/* vh883 */
-
 @media (max-width: 700px) {
+
   body {
     background: linear-gradient(339.32deg, #4A4D15 5.73%, #aac639 93.99%);
   }
-
 
   .cardForm {
     width: calc(100vw - 30vw);

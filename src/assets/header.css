@@ -5,8 +5,6 @@ header {
     color: var(--color-title-header);
 }
 
-
-
 .title {
     background-color: var(--color-background-header);
 }
@@ -30,9 +28,11 @@ h1 {
     width: 70px;
     height: 70px;
 }
+
 .button:hover {
     filter: sepia(100%);
 }
+
 .firstContainer {
     display: flex;
     justify-content: center;
@@ -51,4 +51,3 @@ h2 {
     text-align: center;
     color: var(--color-title-footer);
 }
-
