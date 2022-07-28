@@ -9,12 +9,12 @@ Proton teacher is a management app for teachers, where they can check their upco
 
 ## Demo
 
-AAAAAAAAAAAAA
+![](https://github.com/Equipo-Proton/Proyecto-PHP/blob/v1.4.2/documents/Gifs/DesktopDemo.gif)
 
 
 <details><summary>Mobile version</summary>
 
-Insert gif or link to demo
+![](https://github.com/Equipo-Proton/Proyecto-PHP/blob/v1.4.2/documents/Gifs/MobileDemo.gif)
 
 </details>
 
