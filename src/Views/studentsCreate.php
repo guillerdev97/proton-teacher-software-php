@@ -13,14 +13,14 @@ require_once("components/layoutCreate.php")
             <div class="container cardForm">
                 <div class="row rowResponsive">
                     <div class="row formResponsive">
-                        <div class="col-2 labelResponsive"><label for="name">NAME</label></div>
-                        <div class="col-8"><input id="name" type="text" name="name" required placeholder=" Student"></div>
+                        <div class="col-auto labelResponsive"><label for="name">NAME</label></div>
+                        <div class="col-auto"><input id="name" type="text" name="name" required placeholder=" Student"></div>
                     </div>
                 </div>
                 <div class="row rowResponsive">
                     <div class="row formResponsive">
-                        <div class="col-2 labelResponsive"><label for="class">CLASS</label></div>
-                        <div class="col-8"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
+                        <div class="col-auto labelResponsive"><label for="class">CLASS</label></div>
+                        <div class="col-auto"><input id="class" type="text" name="class" required placeholder=" Class"></input></div>
 
                     </div>
                 </div>
@@ -55,7 +55,6 @@ require_once("components/layoutCreate.php")
 </html>
 
 <style scoped>
-  
     body {
         background: linear-gradient(296.17deg, #F5D627 0%, #87C639 99.07%);
     }
