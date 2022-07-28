@@ -106,6 +106,16 @@ require_once("components/layoutHome.php")
 header {
     margin-bottom: 50px;
 }
+.headerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoCard {
+        width: 35px;
+        height: 35px;
+    }
+
 footer {
     margin-top: 50px;
 }
@@ -316,6 +326,11 @@ footer {
         height: 70px;
         border-radius: 10px;
     }
+    .logoCard {
+        width: 40px;
+        height: 40px;
+    }
+
     .button {
         display: none;
     }
@@ -354,108 +369,24 @@ footer {
     .logo {
         width: 65px;
         height: 65px;
-
-
-    /* 700px */
-    @media (max-width: 700px) {
-        .contentMain {
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contentMain>div {
-            width: 85%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-top: 15px;
-
-            /*   border: 1px solid black; */
-        }
-
-        .buttonQuerie {
-            display: block;
-            width: 50px;
-            height: 50px;
-        }
-
-        h1 {
-            font-size: 2.6rem;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-        }
-
-        #scrollYBox {
-            width: 75%;
-            height: 570px;
-            overflow: auto;
-            background-color: transparent;
-            border: 5px solid transparent;
-            border-radius: 5px;
-        }
-
-        thead {
-            display: none;
-        }
-
-        tbody {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-        }
-
-        tr {
-            display: inline-block;
-            padding: 1rem 0.5rem 1rem 0.5rem;
-            margin: 1.5rem;
-            border: 1px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 0 10px;
-            border: none;
-            background-color: white;
-        }
-
-        th {
-            display: block;
-            border: none;
-        }
-
-        td {
-            display: block;
-            border: none;
-        }
-
-        .headerCard {
-            height: 70px;
-            border-radius: 10px;
-        }
-        .logoCard {
-            width: 40px;
-            height: 40px;
-        }
-        .button {
-            display: none;
-        }
     }
     #scrollYBox {
         width: 100%;
     }
+
     footer {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 70px;
     }
+
     footer h3 {
         font-size: 16px;
     }
+
 }
+   
 
 
 
