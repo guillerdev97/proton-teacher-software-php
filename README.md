@@ -9,16 +9,14 @@ Proton teacher is a management app for teachers, where they can check their upco
 
 ## Demo
 
+AAAAAAAAAAAAA
+
+
+<details><summary>Mobile version</summary>
+
 Insert gif or link to demo
 
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#ffc815](https://via.placeholder.com/10/ffc815?text=+) #ffc815 |
-| Secondary Color | ![#87c639](https://via.placeholder.com/10/87c639?text=+) #87c639 |
-| Terciary Color | ![#585858](https://via.placeholder.com/10/585858?text=+) #585858 |
-| Contrast Color | ![#080E09](https://via.placeholder.com/10/080E09?text=+) #080E09 |
+</details>
 
 
 ## Run Locally
@@ -26,7 +24,7 @@ Insert gif or link to demo
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Equipo-Proton/Proyecto-PHP.git
 ```
 
 Go to the project directory
@@ -41,7 +39,7 @@ Install dependencies
   composer update
 ```
 
-Install database: Import the following file in XAMPP
+Import the following file in XAMPP
 
 ```bash
   teacherschedule.sql
@@ -59,6 +57,8 @@ Start the server
 
 - PHP 8.1.6
 - Composer 2.3.10
+
+
 ## Running Tests
 
 To run tests, run the following command
@@ -74,6 +74,18 @@ To run tests, run the following command
 - Agile
 - Scrum
 - Pair programming
+
+## Versions
+
+![App Screenshot](https://cdn.discordapp.com/attachments/977641039953293362/1002316914661535895/unknown.png)
+- v1.1.0  Implementation of the Read, Create and Delete of the C.R.U.D. with the layout of the header and footer.
+- v1.2.0  Styles to the layouts of the two pages of the project.
+- v1.3.0  Implementation of the Update of the C.R.U.D. with its functions.
+- v1.3.1  Responsive pages hotfix.
+- v1.4.0  Final version for the client with the implementation of the tests.
+- v1.4.1  Background hotfix
+- v1.4.2  Alert hotfix
+
 
 #### Tools and technologies used
 
@@ -92,14 +104,13 @@ To run tests, run the following command
 
 ## Authors
 
-
-
-- [@GuillermoGarcía](https://github.com/guillerdev97)
-- [@KerimOzkan](https://github.com/ozknkrm)
-- [@SusanaMartínez](https://github.com/Susipro)
-- [@DavidDelCastillo](https://github.com/BigBen999)
-- [@JuanFBalseca](https://github.com/sudoBuda)
-
+| Nombre | Roll | <img src="https://github.com/Yelose/Yelose/blob/main/img/github.png" width="30px" height="30px"> |
+| ---: | :---: | :---: |
+| David del Castillo | Web Developer| https://github.com/BigBen999 |
+| JuanFBalseca | Web Developer| https://github.com/sudoBuda |
+| SusanaMartínez | Web Developer | https://github.com/Susipro |
+| Guillermo García | Scrum Master | https://github.com/guillerdev97 |
+| Kerim Ozkan| Product Owner | https://github.com/ozknkrm |
 
 ## Acknowledgements
 
