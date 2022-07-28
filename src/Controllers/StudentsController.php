@@ -70,7 +70,7 @@ class StudentsController
         $newStudent->save();
         $this->index();
         $var = "Congrats! You have created a new class!";
-        echo "<script>alert('".$var."');</script>";
+        echo "<script defer>alert('" . $var . "');</script>";
     }
 
     public function backHome()
@@ -89,9 +89,9 @@ class StudentsController
     {
         $studentHelped = new Students();
         $student = $studentHelped->findByStudentId($id);
-        $student->rename($request["name"],$request["class"]);
+        $student->rename($request["name"], $request["class"]);
         $student->update();
-        
+
         $this->index();
     }
 }
