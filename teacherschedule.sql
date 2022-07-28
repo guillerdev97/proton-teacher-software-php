@@ -39,14 +39,14 @@ CREATE TABLE `appointments` (
 --
 
 INSERT INTO `appointments` (`id`, `name`, `class`, `date_time`) VALUES
-(19, 'Kerim Ozkan', 'Physical', '2022-07-25'),
-(21, 'Susana Martínez A.', 'Nature', '2022-07-25'),
-(22, 'David del Castillo', 'Sports', '2022-07-25'),
-(24, 'Guillermo García R.', 'Maths', '2022-07-25'),
-(25, 'Juan Balseca A.', 'Programming', '2022-07-25'),
-(27, 'Carla Álvarez', 'Language', '2022-07-25'),
-(28, 'Jose Miguel', 'Software', '2022-07-25'),
-(29, 'Francisco ', 'German', '2022-07-25'),
+(19, 'Kerim Ozkan', 'Physical', '2022-07-11'),
+(21, 'Susana Martínez A.', 'Nature', '2022-07-13'),
+(22, 'David del Castillo', 'Sports', '2022-07-13'),
+(24, 'Guillermo García R.', 'Maths', '2022-07-15'),
+(25, 'Juan Balseca A.', 'Programming', '2022-07-16'),
+(27, 'Carla Álvarez', 'Language', '2022-07-16'),
+(28, 'Jose Miguel', 'Software', '2022-07-19'),
+(29, 'Francisco ', 'German', '2022-07-21'),
 (30, 'Marie C.', 'French', '2022-07-25');
 
 --

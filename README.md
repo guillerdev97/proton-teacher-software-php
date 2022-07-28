@@ -105,7 +105,7 @@ To run tests, run the following command
 ## Authors
 
 | Nombre | Roll | <img src="https://github.com/Yelose/Yelose/blob/main/img/github.png" width="30px" height="30px"> |
-| ---: | :---: | :---: |
+| :--- | :---: | :---: |
 | David del Castillo | Web Developer| https://github.com/BigBen999 |
 | JuanFBalseca | Web Developer| https://github.com/sudoBuda |
 | SusanaMartínez | Web Developer | https://github.com/Susipro |
