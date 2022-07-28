@@ -30,7 +30,9 @@ h1 {
     width: 70px;
     height: 70px;
 }
-
+.button:hover {
+    filter: sepia(100%);
+}
 .firstContainer {
     display: flex;
     justify-content: center;

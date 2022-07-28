@@ -49,6 +49,18 @@ body {
     text-rendering: optimizeLegibility;
     background: linear-gradient(296.17deg, #87C639 0%, #F5D627 99.07%);
 }
+header {
+    font-family: 'Kreon', serif;
+
+}
+
+h2 {
+    font-family: 'Scheherazade New', serif;
+}
+
+main {
+    font-family: 'Andika', sans-serif;
+}
 
 @media (max-width: 700px) {
     body {
