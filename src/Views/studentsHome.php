@@ -252,9 +252,16 @@ require_once("components/layoutHome.php")
 
     /* media queries */
     /* 1300px */
+    @media (max-width: 1400px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+
     @media (max-width: 1300px) {
         h1 {
-            font-size: 5.3rem;
+            font-size: 5rem;
         }
 
         .logo {
@@ -303,11 +310,15 @@ require_once("components/layoutHome.php")
             height: 520px;
         }
     }
-
+    @media (max-width: 940px) {
+        h1 {
+            font-size: 3rem;
+        }
+    }
     /* 900px */
     @media (max-width: 900px) {
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
         }
 
         .logo {
@@ -329,7 +340,7 @@ require_once("components/layoutHome.php")
     /* 775px */
     @media (max-width: 775px) {
         h1 {
-            font-size: 3.1rem;
+            font-size: 2.7rem;
         }
 
         h2 {
@@ -443,7 +454,11 @@ require_once("components/layoutHome.php")
             display: none;
         }
     }
-
+    @media (max-width: 640px) {
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
     /* 590px */
     @media (max-width: 590px) {
         h1 {
@@ -472,6 +487,9 @@ require_once("components/layoutHome.php")
     @media (max-width: 530px) {
         #scrollYBox {
             width: 95%;
+        }
+        h1 {
+            font-size: 1.8rem;
         }
     }
 
