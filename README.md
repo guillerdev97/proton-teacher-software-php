@@ -24,13 +24,13 @@ Proton teacher is a management app for teachers, where they can check their upco
 Clone the project
 
 ```bash
-  git clone https://github.com/Equipo-Proton/Proyecto-PHP.git
+  git clone https://github.com/guillerdev97/proton-teacher-software-php.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Proyect-PHP
+  cd proton-teacher-software-php
 ```
 
 Install dependencies
